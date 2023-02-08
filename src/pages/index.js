@@ -44,8 +44,7 @@ export default function Index() {
   const history = useHistory();
   const location = useLocation();
   const { user } = useSelector(state => state.auth)
-  const [selectedKey, setSelectedKey] = useState(
-  );
+  const [selectedKey, setSelectedKey] = useState("1");
 
   const onMenuClick = (menu) => {
     console.log('ff')

@@ -15,7 +15,6 @@ import PrivateRoute from "./PrivateRoute";
 
 
 export default function AppRouter() {
-  console.log("change route");
   return (
     <Router>
       <Switch>
@@ -24,7 +23,7 @@ export default function AppRouter() {
           <BlogEditor />
         </PrivateRoute>
         <Route path="/home" component={Home} />
-        <Redirect exact from="/" to="/home" />
+        <Redirect exact from="/" to="/home/categories" />
         <Route path="/test" component={Categories} />
       </Switch>
     </Router>

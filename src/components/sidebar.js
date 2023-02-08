@@ -1,6 +1,7 @@
 import { Affix, Layout } from "antd";
 import React from "react";
 
+import logo from '../assets/logo-light.svg'
 const { Sider } = Layout;
 
 export default function Sidebar({ menu }) {
@@ -16,7 +17,7 @@ export default function Sidebar({ menu }) {
         style={{ height: "100vh" }}
       >
         <div className=" m-2 h-11">
-          <img style={{ height: "100%" }} className="mx-auto" src="/logo.png" alt="drdongphuong" />
+          <img style={{ height: "100%" }} src={logo} alt="drdongphuong" />
         </div>
         {menu}
       </Sider>

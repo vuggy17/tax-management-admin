@@ -19,7 +19,7 @@ export default function AnotherMediaItem({ file, selectedItem, ...props }) {
         </span>
         <img
           data-src={`${HOST_NAME}${url}`}
-          src="/img/img_placeholder.jpg"
+          src="https://res.cloudinary.com/dkjhojumq/image/upload/v1675829468/samples/logo_y2dyds.svg"
           alt={alt}
           className=" w-full h-full object-cover relative lazyload"
         ></img>
