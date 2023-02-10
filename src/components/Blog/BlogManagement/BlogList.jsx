@@ -73,7 +73,7 @@ const BlogItemContent = ({ content }) => {
             </span>
           </Tag>
         )}
-        {content.send_mail &&
+        {/* {content.send_mail &&
           <Tag
             style={{ marginLeft: 12, textAlign: "center" }}
             color="purple"
@@ -82,7 +82,7 @@ const BlogItemContent = ({ content }) => {
             <span className="hidden lg:inline">Đã gửi email
             </span>
           </Tag>
-        }
+        } */}
       </Link>
     }
     description={`Thời gian tạo: ${getDateTime(content.createdAt)}`}
@@ -92,7 +92,7 @@ const BlogItemContent = ({ content }) => {
 // các nút chức năng 
 const ListItemActions = ({ item, ...props }) => {
   return <div className="flex justify-start items-center">
-    <Button type="link"
+    {/* <Button type="link"
       style={{ padding: "4px 0" }}
     >
       <a href={`${CLIENT_URL}preview/${item.path}`}
@@ -100,8 +100,8 @@ const ListItemActions = ({ item, ...props }) => {
         target="_blank" rel="noopener noreferrer" >
         xem trước
       </a>
-    </Button>
-    <Divider type="vertical" />
+    </Button> */}
+    {/* <Divider type="vertical" /> */}
     <Button type="link"
       style={{ padding: "4px 0" }}
     >
@@ -214,7 +214,7 @@ const ActionButton = ({ status, id, sticked, mailed }) => {
   if (status == "publish")
     return (
       <>
-        <Button
+        {/* <Button
           style={{ padding: "4px 0" }}
           type="link"
           key="list-loadmore-send-mail"
@@ -222,17 +222,17 @@ const ActionButton = ({ status, id, sticked, mailed }) => {
         >
           {mailed ? " gửi lại email " : "gửi email"}
         </Button>
-        <Divider type="vertical" />
+        <Divider type="vertical" /> */}
 
-        <Button
+        {/* <Button
           style={{ padding: "4px 0" }}
           type="link"
           key="list-loadmore-pin"
           onClick={() => toggleBlogPinStatus(id, sticked)}
         >
           {sticked ? "bỏ ghim" : "ghim"}
-        </Button>
-        <Divider type="vertical" />
+        </Button> */}
+        {/* <Divider type="vertical" /> */}
 
         <Button
           style={{ padding: "4px 0" }}
@@ -271,7 +271,7 @@ const ActionButton = ({ status, id, sticked, mailed }) => {
         >
           công khai
         </Button>
-        <Divider type="vertical" />
+        {/* <Divider type="vertical" /> */}
       </>
 
     );

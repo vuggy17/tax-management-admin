@@ -46,9 +46,9 @@ export default function PageSetting({ menu, visible, ...props }) {
                 }}
               />
             </Panel>
-            <Panel header="Gợi ý sản phẩm" key="3">
+            {/* <Panel header="Gợi ý sản phẩm" key="3">
               <Product selectedProducts={currentBlog?.product || []} />
-            </Panel>
+            </Panel> */}
             <Panel header="Ảnh bìa bài viết" key="4">
               {currentBlog && (
                 <CoverImage
